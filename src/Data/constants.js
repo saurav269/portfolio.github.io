@@ -7,7 +7,7 @@ export const Bio = {
       "Programmer",
     ],
     description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+      "A meticulous and diligent aspiring Full Stack Web developer well versed in HTML, CSS, JS,React, and MERN stack, always eager to take on new challenges.Have the ability to utilize full-stack web development expertise to build a user-responsive website. ",
     github: "https://github.com/saurav269",
     resume:
       "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",

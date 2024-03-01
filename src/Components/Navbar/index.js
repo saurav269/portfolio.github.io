@@ -1,8 +1,9 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import {Link as LinkR} from 'react-router-dom'
-import styled from 'styled-components'
+import styled, { useTheme } from 'styled-components'
 import {DiCssdeck} from 'react-icons/di'
+import {FaBars} from 'react-icons/fa'
 
 const Nav = styled.div`
 background-color: ${({theme}) => theme.card_light};
@@ -111,6 +112,34 @@ height: 70%;
 }
 `;
 
+const MobileMenu = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 16px;
+position: absolute;
+top: 80;
+right: 0;
+width: 100%;
+padding: 12px 40px 24px 40px;
+      background: ${({theme}) => theme.card_light+99};
+      transition: all 0.3s ease-in-out;
+      transform: ${({open}) => (open ? 'translateX(0) ': 'translateX(100%)') };
+      border-radius: 0 0 20 20px;
+      box-shadow: 0 5px 10px rgba(0, 0 , 0.3);
+      opacity: ${({open}) => (open ? '1' : '0')};
+      z-index: ${({open}) => (open ? '1' : '-1')};
+`
+   const MobileMenuLinks= styled(LinkR)`
+      color: ${({theme}) => theme.text_primary};
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: ${({theme}) => theme.primary};
+      }
+   `
 
 const Span = styled.div`
 padding: 0 4px;
@@ -119,6 +148,11 @@ font-size: 18px;
 `;
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false)
+    const theme = useTheme()
+    const openFunc=()=>{
+        setOpen(!open)
+    }
   return (
     <Nav>
       <NavContainer>
@@ -135,7 +169,9 @@ const Navbar = () => {
                 <DiCssdeck size='3rem' /><Span>Saurav</Span>
             </a>
         </NavLogo>
-        <MobileIcon></MobileIcon>
+        <MobileIcon>
+            <FaBars onClick={openFunc} />
+        </MobileIcon>
         <NavItems>
             <NavLink href='#home'>Home</NavLink>
             <NavLink href='#about'>About</NavLink>
@@ -149,6 +185,59 @@ const Navbar = () => {
             <GithubButton>Resume</GithubButton>
         </ButtonContainer>
       </NavContainer>
+      {
+        open && (
+            <MobileMenu open={open}>
+                <MobileMenuLinks href='#home'
+                onClick={openFunc}
+                >
+                    Home
+                </MobileMenuLinks>
+                <MobileMenuLinks href='#about'
+                onClick={openFunc}
+                >
+                    About
+                </MobileMenuLinks>
+                <MobileMenuLinks href='#skills'
+                onClick={openFunc}
+                >
+                    Skills
+                </MobileMenuLinks>
+                <MobileMenuLinks href='#experience'
+                onClick={openFunc}
+                >
+                    Experience
+                </MobileMenuLinks>
+                <MobileMenuLinks href='#project'
+                onClick={openFunc}
+                >
+                    Project
+                </MobileMenuLinks>
+                <MobileMenuLinks href='#education'
+                onClick={openFunc}
+                >
+                    Education
+                </MobileMenuLinks>
+                <MobileMenuLinks href='#contact'
+                onClick={openFunc}
+                >
+                    Contact
+                </MobileMenuLinks>
+                <GithubButton
+                style={{
+                    padding: "10px 16px",
+                    background: `${theme.primary}`,
+                    color: "white",
+                    width: "max-content",
+                }}
+                href="/"
+                targe="_blank"
+                >
+                    Resume
+                    </GithubButton>
+            </MobileMenu>
+        )
+      }
     </Nav>
   )
 }
