@@ -110,6 +110,9 @@ height: 70%;
 @media screen and (max-width: 640px) {
     font-size: 0%.8rem;
 }
+/* @media screen and (max-width: 768px) {
+    display: none; 
+} */
 `;
 
 const MobileMenu = styled.div`
