@@ -2,6 +2,13 @@ import React from 'react'
 import { skills } from '../../Data/constants'
 import styled from 'styled-components'
 import { Tilt } from 'react-tilt';
+import {motion} from 'framer-motion'
+import StarCanvas from '../Canvas/Stars'
+import {
+  headContainerAnimation,
+  headContentAnimation,
+  headTextAnimation,
+} from '../../utils/motion'
 
 
 const Skills = () => {
@@ -130,7 +137,9 @@ const Skills = () => {
 
       
   return (
+
     <Container id='skills'>
+    <StarCanvas />
       <Wrapper>
         <Title>Skills</Title>
       <Desc>
@@ -157,6 +166,7 @@ const Skills = () => {
         ))}
       </SkillsContainer>
       </Wrapper>
+      
     </Container>
   )
 }

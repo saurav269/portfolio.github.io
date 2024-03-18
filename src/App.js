@@ -7,6 +7,8 @@ import Skills from './Components/Skills';
 import Education from './Components/Education';
 import HeroSection from './Components/HeroSection';
 import About from './Components/About';
+import Experience from './Components/Experience';
+import Projects from './Components/Projects';
 
 const Body =  styled.div`
 background-color: ${({theme}) => theme.bg};
@@ -39,8 +41,10 @@ function App() {
        <Wrapper>
         <About />
        <Skills />
+       <Experience />
        <Education />
        </Wrapper>
+       <Projects />
       </Body>
     </ThemeProvider>
   );

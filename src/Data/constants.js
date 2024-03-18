@@ -89,10 +89,6 @@ export const Bio = {
         //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         // },
         // {
-        //   name: "Flask",
-        //   image:
-        //     "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1280px-Flask_logo.svg.png",
-        // },
         // {
         //   name: "Django",
         //   image:
@@ -233,11 +229,11 @@ export const Bio = {
   export const experiences = [
     {
       id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-      role: "Frontend Engineer Intern",
-      company: "Neurobit",
-      date: "June 2023 - Nov 2023",
-      desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
+      img: "https://media.licdn.com/dms/image/D560BAQG_M0Ibtf1GKQ/company-logo_200_200/0/1686806868169?e=2147483647&v=beta&t=brbPzSJgrIeLVHhyKfIDP3g0lhVsCRmL0vbm3oR2HGk",
+      role: "Softeware Engineer",
+      company: "Sequrasys Enterprises Pvt Ltd",
+      date: "May 2022 - Oct 2023",
+      desc: "Worked on Admin Panel and Designing. Enhanced security measures by implementing authentication protocols, resulting in a 40% decrease in unauthorized access attempts.Improved application performance by optimizing code and reducing page load times, resulting in a 20% increase in site speed.",
       skills: [
         "ReactJS",
         "Redux",
@@ -247,7 +243,6 @@ export const Bio = {
         "CSS",
         "JavaScript",
       ],
-      doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
     },
     // {
     //   id: 1,

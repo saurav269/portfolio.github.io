@@ -3,11 +3,13 @@ import HeroImg from '../../Images/Hero_img.jpg'
 import cursorImg from '../../Images/cursorIcon.png'
 import serverIcon from '../../Images/serverIcon.png'
 import styles from './About.module.css'
+import StarCanvas from '../Canvas/Stars'
 
 
 const About = () => {
   return (
     <section className={styles.container} id='about'>
+     
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img src={HeroImg} alt='' className={styles.aboutImg} />
@@ -37,6 +39,7 @@ const About = () => {
         </ul>
       </div>
     </section>
+    
   )
 }
 
