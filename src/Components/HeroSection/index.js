@@ -7,11 +7,13 @@ import HeroBgAnimation from '../HeroBgAnimation'
 import {Tilt} from 'react-tilt'
 import StarCanvas from '../Canvas/Stars'
 import {motion} from 'framer-motion'
+import RESUME from '../../assets/Saurav_Mallik-Resume.pdf'
 import {
   headContainerAnimation,
   headContentAnimation,
   headTextAnimation,
 } from '../../utils/motion'
+import { Link } from "react-router-dom";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -235,8 +237,19 @@ const ResumeButton = styled.a`
 const HeroSection = () => {
 
   const handleClick=()=>{
-    // <a download='' href={RESUME}></a>
-    window.open('https://drive.google.com/file/d/1Zdo08qPlBnzd0txahuzbAiicmSHOJzs-/view?usp=sharing',"blank")
+    //  <a download='' href={RESUME}></a>
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'https://drive.google.com/file/d/1-JK-55Xn18Wrjce07kKO_EHdXvzXNFpW/view?usp=drive_link';
+    downloadLink.target = '_blank';
+    downloadLink.download = 'Saurav_Mallik-Resume.pdf';
+      // Append the anchor element to the document body
+      document.body.appendChild(downloadLink);
+
+      // Programmatically click the anchor element to trigger the download
+      downloadLink.click();
+  
+      // Clean up: remove the anchor element from the document body
+      document.body.removeChild(downloadLink);
     console.log("hello")
 }
   return (
@@ -272,14 +285,10 @@ const HeroSection = () => {
             <SubTitle>{Bio.description}</SubTitle>
             </motion.div>
 
-            <ResumeButton>
-              <a
-                // href={RESUME}
-                download="fp05_269-Saurav_Mallik-Resume.pdf"
-                onClick={handleClick}
-              >
+            <ResumeButton onClick={handleClick}
+                >
                 Resume
-              </a>
+                
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>

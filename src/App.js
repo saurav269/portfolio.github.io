@@ -1,7 +1,7 @@
 
 import './App.css';
 import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme } from './utils/Theme';
+import { darkTheme, lightTheme } from './utils/Theme';
 import Navbar from './Components/Navbar';
 import Skills from './Components/Skills';
 import Education from './Components/Education';
@@ -9,6 +9,8 @@ import HeroSection from './Components/HeroSection';
 import About from './Components/About';
 import Experience from './Components/Experience';
 import Projects from './Components/Projects';
+import { useState } from 'react';
+import ProjectDetails from './Components/ProjectDetails';
 
 const Body =  styled.div`
 background-color: ${({theme}) => theme.bg};
@@ -33,8 +35,11 @@ background: linear-gradient(
 `
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+  console.log(openModal)
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkTheme ? darkTheme : lightTheme}>
        <Navbar />
       <Body>
        <HeroSection/>
@@ -44,7 +49,10 @@ function App() {
        <Experience />
        <Education />
        </Wrapper>
-       <Projects />
+       <Projects openModal={openModal} setOpenModal={setOpenModal} />
+       {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          }
       </Body>
     </ThemeProvider>
   );
