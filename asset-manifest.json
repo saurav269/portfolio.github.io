@@ -1,17 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio.github.io/static/css/main.4437c9c2.css",
-    "main.js": "/portfolio.github.io/static/js/main.f4a3a076.js",
+    "main.js": "/portfolio.github.io/static/js/main.cdec8716.js",
     "static/js/453.dcefe9c8.chunk.js": "/portfolio.github.io/static/js/453.dcefe9c8.chunk.js",
+    "static/media/img2.png": "/portfolio.github.io/static/media/img2.e289482ebcf00de703af.png",
+    "static/media/img4.png": "/portfolio.github.io/static/media/img4.7e6b20f69e4abc8638bf.png",
+    "static/media/img5.png": "/portfolio.github.io/static/media/img5.934c21377ae9145ef8f1.png",
+    "static/media/img3.png": "/portfolio.github.io/static/media/img3.a7300f4b90d73565456d.png",
+    "static/media/img1.png": "/portfolio.github.io/static/media/img1.3046f2e49f60828bae41.png",
+    "static/media/img6.png": "/portfolio.github.io/static/media/img6.a59be9a68a6a98934142.png",
+    "static/media/img8.png": "/portfolio.github.io/static/media/img8.dc788cbb15774f9befc9.png",
+    "static/media/img7.png": "/portfolio.github.io/static/media/img7.f6bad7a517f31c04bca4.png",
     "static/media/Saurav_Mallik-Resume.pdf": "/portfolio.github.io/static/media/Saurav_Mallik-Resume.2c5cde890f350efdafe6.pdf",
     "static/media/Hero_img.jpg": "/portfolio.github.io/static/media/Hero_img.751ead574e20eb99399c.jpg",
     "index.html": "/portfolio.github.io/index.html",
     "main.4437c9c2.css.map": "/portfolio.github.io/static/css/main.4437c9c2.css.map",
-    "main.f4a3a076.js.map": "/portfolio.github.io/static/js/main.f4a3a076.js.map",
+    "main.cdec8716.js.map": "/portfolio.github.io/static/js/main.cdec8716.js.map",
     "453.dcefe9c8.chunk.js.map": "/portfolio.github.io/static/js/453.dcefe9c8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4437c9c2.css",
-    "static/js/main.f4a3a076.js"
+    "static/js/main.cdec8716.js"
   ]
 }
