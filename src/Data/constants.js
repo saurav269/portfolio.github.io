@@ -1,3 +1,12 @@
+
+import IMG1 from '../assets/img1.png';
+import IMG2 from '../assets/img2.png'
+import IMG3 from '../assets/img3.png'
+import IMG4 from '../assets/img4.png'
+import IMG5 from '../assets/img5.png'
+import IMG6 from '../assets/img6.png'
+import IMG7 from '../assets/img7.png'
+import IMG8 from '../assets/img8.png'
 export const Bio = {
     name: "Saurav Mallik",
     roles: [
@@ -244,90 +253,6 @@ export const Bio = {
         "JavaScript",
       ],
     },
-    // {
-    //   id: 1,
-    //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    //   role: "DevOps & Fullstack Engineering Intern",
-    //   company: "Flipr Inovations Pvt. Ltd.",
-    //   date: "Aug 2023 - Oct 2023",
-    //   desc: "Built Flipr Connect Platforms using React Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with GraphQL and Node JS and connected with MongoDb - Reducing API calls by 20%. Dockerized and automated with Kubernetes & Jenkins CI/CD deployed in AWS-EC2 added Prometheus & Grafana for monitoring.",
-    //   skills: [
-    //     "Docker",
-    //     "Terraform",
-    //     "AWS",
-    //     "EC2",
-    //     "Portainer",
-    //     "Nginx",
-    //     "JavaScript",
-    //     "TypeScript",
-    //     "Node Js",
-    //     " Next Js",
-    //   ],
-    //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
-    // },
-    // {
-    //   id: 2,
-    //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-    //   role: "Android Developer Intern",
-    //   company: "Rudraksha Welffare Foundation",
-    //   date: "June 2021 - Oct 2021",
-    //   desc: "• Built RudraShakti - Astrologer App, with MVVM Architecture using Java and Android Studio integrating Firebase SDK. Created One to One video call integration with Socket.IO and Firebase cloud functions and integrated with Retrofit. Created Low Level Design and converted Figma design to XML code.",
-    //   skills: [
-    //     "Android",
-    //     "Java",
-    //     "Kotlin",
-    //     "XML",
-    //     "Node Js",
-    //     "Cloud Firestore",
-    //     "Firebase",
-    //     "Figma",
-    //   ],
-    //   doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-    // },
-    // {
-    //   id: 3,
-    //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    //   role: "Fullstack Externship",
-    //   company: "Flipr",
-    //   date: "June 2023 - July 2023",
-    //   desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-    //   skills: [
-    //     "ReactJS",
-    //     "Redux",
-    //     "NodeJs",
-    //     "Material UI",
-    //     "HTML",
-    //     "CSS",
-    //     "JavaScript",
-    //     "Docker",
-    //     "AWS",
-    //     "MongoDB",
-    //   ],
-    //   doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
-    // },
-    // {
-    //   id: 4,
-    //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-    //   role: "Android Developer",
-    //   company: "DSC KIIT",
-    //   date: "Nov2021 - Present",
-    //   desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-    //   skills: [
-    //     "Leadership",
-    //     "Mobile Application Development",
-    //     "Kotlin",
-    //     "XML",
-    //     "Figma",
-    //   ],
-    // },
-    // {
-    //   id: 5,
-    //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    //   role: "Open Source Contributor ",
-    //   company: "GirlScript Summer of Code",
-    //   date: "May 2023 - Present",
-    //   desc: "Contributed to different open-source projects and learn from industry experts",
-    // },
   ];
   
   export const education = [
@@ -367,8 +292,7 @@ export const Bio = {
       date: "August 2023 - Dec 2023",
       description:
         "•Developed and deployed a cutting-edge Web application for a blood bank, facilitating efficient blood donation searches and storage of donor, hospital, and organization data, including contact details and donation history.",
-      image:
-        "https://private-user-images.githubusercontent.com/110054999/314102159-eab67616-2883-4d7b-9588-3c1eba4cb936.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5NTQwMjcsIm5iZiI6MTcxMDk1MzcyNywicGF0aCI6Ii8xMTAwNTQ5OTkvMzE0MTAyMTU5LWVhYjY3NjE2LTI4ODMtNGQ3Yi05NTg4LTNjMWViYTRjYjkzNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQxNjU1MjdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NjFiYTNmYTYyMjczZjA0ODdmNzJmMzJiMjM5NDFkZjYzMWIzMzQ0YWQxMTc1NTg1OGE5NzMyZWY0NzVjYTZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.D9ZGi3dJ6fIhZCR1JrYdsNrWeRq0PCrFSs3AvprdcXQ",
+      image: IMG1,
       tags: [
         "React Js",
         "Node Js",
@@ -388,8 +312,7 @@ export const Bio = {
       date: "Nov 2023 - Nov 2023",
       description:
         "Movie Suggestion App using React, interfacing with the TMDB API. The app should enable users to search for movies, view details, with options for sorting and filtering.",
-      image:
-        "https://private-user-images.githubusercontent.com/110054999/314103136-367e07e4-2676-43dc-93b9-77d7caa83757.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5NTQxNzQsIm5iZiI6MTcxMDk1Mzg3NCwicGF0aCI6Ii8xMTAwNTQ5OTkvMzE0MTAzMTM2LTM2N2UwN2U0LTI2NzYtNDNkYy05M2I5LTc3ZDdjYWE4Mzc1Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQxNjU3NTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02M2IyYTNhMjc0NDQ4YjAzYzg2ZTVhMzg0YzVkNGM4Mzk4YjM1M2JkMmJhYjFmZTQ5YTk0ZGYwN2QyYmNiN2RjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.EDWiY1jOnjo5SE7gyLdVhyphERgZPtJTuAhBqYVT1R4",
+      image: IMG2,
       tags: [
         "React Js",
         "MongoDb",
@@ -407,8 +330,7 @@ export const Bio = {
       date: "Apr 2023 - May 2023",
       description:
         "Developed an e-commerce platform catering to a diverse range of books, facilitating seamless ordering and purchasing for users",
-      image:
-        "https://user-images.githubusercontent.com/110054999/236812523-40310ec2-c04d-4318-896f-dd8c7b7a33a1.png",
+      image:IMG3,
       tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux", "Bootstrap", "Javascript"],
       category: "web app",
       github: "https://github.com/saurav269/Book-Store-MERN_APP-?tab=readme-ov-file",
@@ -420,8 +342,7 @@ export const Bio = {
       date: "Feb 2024 - Feb 2024",
       description:
         "Streamlined video player app with customizable features, offline mode, and seamless navigation. Supports multiple formats and playlists for an immersive viewing experience.",
-      image:
-        "https://private-user-images.githubusercontent.com/110054999/306620836-d4535050-0b71-4d97-aeaf-b48d4b7c454b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA5NTUzMTAsIm5iZiI6MTcxMDk1NTAxMCwicGF0aCI6Ii8xMTAwNTQ5OTkvMzA2NjIwODM2LWQ0NTM1MDUwLTBiNzEtNGQ5Ny1hZWFmLWI0OGQ0YjdjNDU0Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyMFQxNzE2NTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xZjg0NzYyMTkxNmExYWJhODE5NzllNjZmZGY5ZDA0YjBhMzRkMTYyYmM2OGE2NGE5N2Q3ODRkZGI0NTA2OTJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dAMcKvWbVpYSzSi9jM7hEiXDO7z7I0hy9p23vo0UUy0",
+      image: IMG4,
       tags: [
         "React Js",
         "MongoDb",
@@ -439,8 +360,7 @@ export const Bio = {
       date: "Nov 2022 - Nov 2022",
       description:
         "Description : It is a Grocery website where you can buy day to day grocery for your Household. We tried to implement all the feature I have mentioned below using the tech-Stack I have mentioned below. It is fully functional and responsive website.",
-      image:
-        "https://user-images.githubusercontent.com/107553043/213978948-a69712e9-1585-4dbd-ac7f-e2259222e40f.png",
+      image: IMG5,
       tags: ["React Js", "Redux", "Javascript", "VGRedus Thunk", "Chakra UI"],
       category: "web page",
       github: "https://github.com/saurav269/Jio-mart-Website-Clone-?tab=readme-ov-file",
@@ -452,8 +372,7 @@ export const Bio = {
       date: "Dec 2022 - Dec 2022",
       description:
         "An online platform where anyone can complete their internship and enhance their skill.",
-      image:
-        "https://user-images.githubusercontent.com/110054999/214121336-3fa6d411-a2b7-48e1-a86f-7fb7550f4bc0.png",
+      image: IMG6,
       tags: ["HTML","CSS","JAVASCRIPT"],
       category: "web page",
       github: "https://github.com/saurav269/InternTheory-Website-Clone-?tab=readme-ov-file",
@@ -465,8 +384,7 @@ export const Bio = {
       date: "Jun 2021",
       description:
         "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-      image:
-        "https://user-images.githubusercontent.com/110054999/214132847-c9e00c42-3bb0-4f7d-bf39-36a9a8952ba7.png",
+      image: IMG7,
       tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
       category: "web page",
       github: "https://github.com/saurav269/Monster-India-Website-clone-/tree/main?tab=readme-ov-file",
@@ -478,8 +396,7 @@ export const Bio = {
       date: "Jun 2022",
       description:
         "An Online medical platform which provides services, including e-pharmacy,diagostics, e-consultation and health content",
-      image:
-        "https://user-images.githubusercontent.com/110054999/214126690-e4d11e4b-bb8f-4b9e-a5ac-4b36ba7e475d.png",
+      image: IMG8,
       tags: ["React Js", "Javascript", "Chakra UI"],
       category: "web page",
       github: "https://github.com/saurav269/Tata-1MG-Website-clone-?tab=readme-ov-file",
